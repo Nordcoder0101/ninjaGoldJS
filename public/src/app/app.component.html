@@ -1,0 +1,16 @@
+<h1>Total gold: {{gold}}</h1>
+
+<ng-container *ngFor ="let location of locations">
+  <div>
+    <h1>{{location.name}}</h1>
+    <p>{{location.earning}}</p>
+    <button (click)="earnGold(location)">{{location.name}}!</button>
+  </div>
+</ng-container>
+
+<div>
+  <h1>Adventure Log</h1>
+  <ng-container *ngFor="let gold of goldStrings">
+    <p>{{gold}}</p>
+  </ng-container>
+</div>
